@@ -7,19 +7,19 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
-    path: 'products',
+    path: 'page-three',
     loadChildren: () =>
-      import('./products/products.module').then(m => m.ProductsModule)
+      import('./page-three/page-three.module').then(m => m.PageThreeModule)
   },
   {
-    path: 'cart',
-    loadChildren: () => import('./cart/cart.module').then(m => m.CartModule)
+    path: 'page-two',
+    loadChildren: () => import('./page-two/page-two.module').then(m => m.PageTwoModule)
   },
   {
-    path: 'dashboard',
+    path: 'page-four',
     loadChildren: () =>
-      import('./user-dashboard/user-dashboard.module').then(
-        m => m.UserDashboardModule
+      import('./page-four/page-four.module').then(
+        m => m.PageFourModule
       )
   },
   {
